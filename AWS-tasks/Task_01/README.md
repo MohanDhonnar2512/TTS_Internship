@@ -27,7 +27,9 @@ This project is suitable for **Cloud / DevOps beginners** and can be used as a *
 
 ## Architecture
 
-![Uploading image.png…]()
+![image](<img width="1358" height="779" alt="image" src="https://github.com/user-attachments/assets/a0d69f50-7505-47f3-aa81-3eaad95bc7d4" />
+)
+
 
 ---
 
