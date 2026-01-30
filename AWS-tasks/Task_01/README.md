@@ -78,7 +78,7 @@ Allow the following inbound rules:
 ---
 
 ### Step 4: Update System Packages
-```bash
+
 sudo apt update && sudo apt upgrade -y
 
 ### Step 5: Install Nginx Web Server
