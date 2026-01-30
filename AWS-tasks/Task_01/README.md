@@ -13,7 +13,7 @@ This project is suitable for **Cloud / DevOps beginners** and can be used as a *
 
 - **Amazon Web Services (AWS)**
   - EC2 (Elastic Compute Cloud)
-  - Security Groups
+  - VPC
 - **Operating System**
   - Ubuntu Linux
 - **Web Server**
@@ -27,19 +27,7 @@ This project is suitable for **Cloud / DevOps beginners** and can be used as a *
 
 ## Architecture
 
-
-
-User Browser
-|
-| HTTP Request (Port 80)
-v
-AWS EC2 Instance (Ubuntu)
-|
-| Nginx Web Server
-v
-Static Website (index.html)
-+-----------------------------
-
+![Uploading image.png…]()
 
 ---
 
