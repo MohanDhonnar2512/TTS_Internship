@@ -81,32 +81,30 @@ Allow the following inbound rules:
 ```bash
 sudo apt update && sudo apt upgrade -y
 
----
- 
-Step 5: Install Nginx Web Server
+### Step 5: Install Nginx Web Server
+'''bash
 sudo apt install nginx -y
-
-Step 6: Start and Enable Nginx
+---
+### Step 6: Start and Enable Nginx
 sudo systemctl start nginx
 sudo systemctl enable nginx
 
-Step 7: Edit Website Content
+---
 
+### Step 7: Edit Website Content
 Navigate to the default web directory:
-
 cd /var/www/html
+Edit the website file:
 sudo nano index.html
-
-
 Add your custom HTML content and save the file.
+---
 
-Step 8: Restart Nginx Service
+### Step 8: Restart Nginx Service
 sudo systemctl restart nginx
+---
 
-Step 9: Access the Website
-
-Open a browser
-
-Enter the EC2 public IP address
-
+### Step 9: Access the Website
+Open a web browser
+Enter the EC2 Public IP Address
 Your website should be live 🎉
+---
