@@ -28,8 +28,6 @@ This project is suitable for **Cloud / DevOps beginners** and can be used as a *
 ## Architecture
 ![Architecture Diagram](https://github.com/user-attachments/assets/a0d69f50-7505-47f3-aa81-3eaad95bc7d4)
 
-
-
 ---
 
 ## ✅ Prerequisites
@@ -75,6 +73,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt update && sudo apt upgrade -y
 sudo apt install nginx -y
 ```
+
 ### Step 6: Start and Enable Nginx
 ```bash
 
