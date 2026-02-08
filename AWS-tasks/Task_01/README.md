@@ -13,7 +13,7 @@ This project is suitable for **Cloud / DevOps beginners** and can be used as a *
 
 - **Amazon Web Services (AWS)**
   - EC2 (Elastic Compute Cloud)
-  - Security Groups
+  - VPC
 - **Operating System**
   - Ubuntu Linux
 - **Web Server**
@@ -26,19 +26,8 @@ This project is suitable for **Cloud / DevOps beginners** and can be used as a *
 
 
 ## Architecture
+![Architecture Diagram](https://github.com/user-attachments/assets/a0d69f50-7505-47f3-aa81-3eaad95bc7d4)
 
-
-
-User Browser
-|
-| HTTP Request (Port 80)
-v
-AWS EC2 Instance (Ubuntu)
-|
-| Nginx Web Server
-v
-Static Website (index.html)
-+-----------------------------
 
 
 ---
@@ -78,35 +67,38 @@ Allow the following inbound rules:
 ---
 
 ### Step 4: Update System Packages
-```bash
+
 sudo apt update && sudo apt upgrade -y
 
----
- 
-Step 5: Install Nginx Web Server
+### Step 5: Install Nginx Web Server
+```bash
+sudo apt update && sudo apt upgrade -y
 sudo apt install nginx -y
+```
+### Step 6: Start and Enable Nginx
+```bash
 
-Step 6: Start and Enable Nginx
 sudo systemctl start nginx
 sudo systemctl enable nginx
 
-Step 7: Edit Website Content
+```
 
+### Step 7: Edit Website Content
 Navigate to the default web directory:
-
+```bash
 cd /var/www/html
+Edit the website file:
 sudo nano index.html
-
-
 Add your custom HTML content and save the file.
+```
 
-Step 8: Restart Nginx Service
+### Step 8: Restart Nginx Service
+```bash
 sudo systemctl restart nginx
+```
 
-Step 9: Access the Website
-
-Open a browser
-
-Enter the EC2 public IP address
-
-Your website should be live 🎉
+### Step 9: Access the Website
+- Open a web browser
+- Enter the EC2 Public IP Address
+- Your website should be live 🎉
+---
