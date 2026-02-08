@@ -1,4 +1,4 @@
-# 🏗️ AWS Three-Tier Architecture Deployment (Production Ready)
+# AWS Three-Tier Architecture Deployment 
 
 ## 📌 Project Overview
 
@@ -50,11 +50,13 @@ This design follows AWS best practices for:
 ---
 
 ## 🏗️ Architecture Diagram
+![Architecture Diagram](<img width="1295" height="768" alt="Screenshot 2026-01-11 113510" src="https://github.com/user-attachments/assets/9a9297e7-97d2-41cf-a4f5-69008ac97a3c" />
+)
 
 
 ---
 
-## 🌐 Network Architecture
+##  Network 
 
 ### VPC
 CIDR: `10.0.0.0/16`
@@ -82,7 +84,7 @@ Provides isolated networking for all tiers.
 
 ---
 
-## 🚦 Route Tables
+##  Route Tables
 
 ### Public Route Table
 0.0.0.0/0 → Internet Gateway
@@ -92,14 +94,14 @@ Provides isolated networking for all tiers.
 
 ---
 
-## 🌍 Internet Gateway
+##  Internet Gateway
 
 - Enables public internet access for Web Tier
 - Attached to VPC
 
 ---
 
-## 🔐 NAT Gateway
+##  NAT Gateway
 
 Allows private EC2 instances to:
 
@@ -111,7 +113,7 @@ WITHOUT public exposure.
 
 ---
 
-## 🔐 Security Groups
+##  Security Groups
 
 ### Load Balancer SG
 - HTTP 80 → Anywhere
@@ -128,7 +130,7 @@ WITHOUT public exposure.
 
 ---
 
-## 📦 Launch Templates
+## Launch Templates
 
 Used for both Web and Application tiers.
 
@@ -144,7 +146,7 @@ Ensures consistent instance creation.
 
 ---
 
-## 🔁 Auto Scaling Groups
+## Auto Scaling Groups
 
 ### Web Tier ASG
 - Nginx servers
@@ -162,7 +164,7 @@ Benefits:
 
 ---
 
-## 🌐 Web Tier Deployment (Nginx)
+##  Web Tier Deployment (Nginx)
 
 ### Install Nginx
 ```bash
@@ -175,9 +177,11 @@ cd /var/www/html
 sudo nano index.html
 sudo nano style.css
 sudo systemctl restart nginx
+```
 
-⚙️ Application Tier Deployment (Python + Flask)
+## ⚙️ Application Tier Deployment (Python + Flask)
 Install Dependencies
+```bash
 sudo apt install python3 python3-pip -y
 pip3 install flask
 
@@ -192,9 +196,11 @@ Business logic
 Database queries
 
 Response formatting
+```
 
-🗄️ Database Tier – Amazon RDS (MySQL)
+## Database Tier – Amazon RDS (MySQL)
 Configuration
+
 
 Engine: MySQL
 
@@ -217,10 +223,11 @@ No OS management
 🔗 MySQL Client Connectivity
 
 Installed on Application Tier:
+```bash
 
 sudo apt install mysql-client -y
 mysql -h <RDS-ENDPOINT> -u admin -p
-
+```
 
 Used for:
 
@@ -228,31 +235,35 @@ Query execution
 
 Connectivity validation
 
-✅ Validation
+## Validation
 Web Tier
+```bash
 curl http://localhost
-
+```
 Application Tier
+```bash
 curl http://localhost:5000
-
+```
 Database Tier
+```bash
 SHOW DATABASES;
+```
 
-🔄 End-to-End Request Flow
+## End-to-End Request Flow
 
-User sends HTTP request
+1) User sends HTTP request
 
-ALB receives traffic
+2) ALB receives traffic
 
-Web Tier serves frontend
+3) Web Tier serves frontend
 
-Flask processes backend logic
+4) Flask processes backend logic
 
-RDS executes query
+5) RDS executes query
 
-Response returns to user
+6) Response returns to user
 
-📈 Project Outcome
+## Project Outcome
 
 ✅ Fully deployed Three-Tier Architecture
 ✅ Secure VPC networking
