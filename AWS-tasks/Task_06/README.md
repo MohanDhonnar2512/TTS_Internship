@@ -50,8 +50,7 @@ This design follows AWS best practices for:
 ---
 
 ## 🏗️ Architecture Diagram
-![Architecture Diagram](<img width="1295" height="768" alt="Screenshot 2026-01-11 113510" src="https://github.com/user-attachments/assets/9a9297e7-97d2-41cf-a4f5-69008ac97a3c" />
-)
+![Architecture Diagram](https://github.com/user-attachments/assets/9a9297e7-97d2-41cf-a4f5-69008ac97a3c)
 
 
 ---
@@ -199,7 +198,7 @@ Response formatting
 ```
 
 ## Database Tier – Amazon RDS (MySQL)
-Configuration
+### Configuration
 
 
 Engine: MySQL
@@ -210,7 +209,7 @@ Public Access: Disabled
 
 Multi-AZ Enabled
 
-Benefits:
+### Benefits:
 
 Automatic backups
 
