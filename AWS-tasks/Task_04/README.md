@@ -103,7 +103,7 @@ Creates sample webpage
 
 Displays instance IP
 
-Step 3: Create Target Group
+### Step 3: Create Target Group
 
 EC2 → Target Groups → Create
 
@@ -117,7 +117,7 @@ Register all three EC2 instances
 
 Configure health checks
 
-Step 4: Create Security Groups
+### Step 4: Create Security Groups
 ALB Security Group
 
 Allow HTTP (80) from Anywhere
@@ -130,7 +130,7 @@ Allow SSH (22) from your IP
 
 This protects backend servers from public access.
 
-Step 5: Create Application Load Balancer
+### Step 5: Create Application Load Balancer
 
 EC2 → Load Balancers → Create ALB
 
@@ -142,13 +142,13 @@ Attach ALB Security Group
 
 Associate Target Group
 
-Step 6: Configure Listener Rules
+### Step 6: Configure Listener Rules
 
 Listener: HTTP :80
 
 Forward traffic to target group
 
-Step 7: Test Load Balancing
+### Step 7: Test Load Balancing
 
 Copy ALB DNS Name
 
@@ -160,7 +160,7 @@ Observe Private IP changes
 
 This confirms traffic distribution.
 
-Step 8: Validate High Availability
+### Step 8: Validate High Availability
 
 Stop one EC2 instance
 
