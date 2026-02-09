@@ -94,7 +94,8 @@ EOF
 
 systemctl start nginx
 systemctl enable nginx
-This script:
+```
+
 
 Installs Nginx
 
