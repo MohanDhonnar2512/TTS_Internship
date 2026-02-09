@@ -181,33 +181,4 @@ User → ALB → Target Group → Auto Scaling Group → EC2 → Nginx → Respo
 
 ---
 
-## 🔐 Security Highlights
 
-- EC2 instances not publicly exposed
-- ALB acts as single entry point
-- Security groups restrict access
-- Health checks ensure reliability
-
----
-
-## 🚀 Future Enhancements
-
-- HTTPS with ACM
-- CloudWatch alarms
-- Auto Scaling schedules
-- CI/CD deployment
-- CloudFront integration
-
----
-
-## 👨‍💻 Author
-
-**Mohan Dhonnar**  
-Cloud & DevOps Aspirant  
-AWS | EC2 | ALB | Auto Scaling | Nginx
-
----
-
-## ⭐ Conclusion
-
-This project demonstrates a real-world AWS architecture using Auto Scaling and Application Load Balancer to achieve scalable, fault-tolerant, and production-grade web infrastructure.
