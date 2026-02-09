@@ -27,10 +27,6 @@ This project is ideal for learning **production-grade cloud architecture fundame
 
 ---
 
-## 🏗️ Architecture
-
-
----
 
 ## 🎯 Project Objectives
 
@@ -97,96 +93,96 @@ systemctl enable nginx
 ```
 
 
-Installs Nginx
+- Installs Nginx
 
-Creates sample webpage
+- Creates sample webpage
 
-Displays instance IP
+- Displays instance IP
 
 ### Step 3: Create Target Group
 
-EC2 → Target Groups → Create
+- EC2 → Target Groups → Create
 
-Target type: Instances
+- Target type: Instances
 
-Protocol: HTTP
+- Protocol: HTTP
 
-Port: 80
+- Port: 80
 
-Register all three EC2 instances
+- Register all three EC2 instances
 
-Configure health checks
+- Configure health checks
 
 ### Step 4: Create Security Groups
-ALB Security Group
+- ALB Security Group
 
-Allow HTTP (80) from Anywhere
+- Allow HTTP (80) from Anywhere
 
-EC2 Security Group
+- EC2 Security Group
 
-Allow HTTP (80) only from ALB Security Group
+- Allow HTTP (80) only from ALB Security Group
 
-Allow SSH (22) from your IP
+- Allow SSH (22) from your IP
 
-This protects backend servers from public access.
+- This protects backend servers from public access.
 
 ### Step 5: Create Application Load Balancer
 
-EC2 → Load Balancers → Create ALB
+- EC2 → Load Balancers → Create ALB
 
-Internet-facing
+- Internet-facing
 
-Select public subnets (Multi-AZ)
+- Select public subnets (Multi-AZ)
 
-Attach ALB Security Group
+- Attach ALB Security Group
 
-Associate Target Group
+- Associate Target Group
 
 ### Step 6: Configure Listener Rules
 
-Listener: HTTP :80
+- Listener: HTTP :80
 
-Forward traffic to target group
+- Forward traffic to target group
 
 ### Step 7: Test Load Balancing
 
-Copy ALB DNS Name
+- Copy ALB DNS Name
 
-Open in browser
+- Open in browser
 
-Refresh page multiple times
+- Refresh page multiple times
 
-Observe Private IP changes
+- Observe Private IP changes
 
-This confirms traffic distribution.
+- This confirms traffic distribution.
 
 ### Step 8: Validate High Availability
 
-Stop one EC2 instance
+- Stop one EC2 instance
 
-Refresh ALB URL
+- Refresh ALB URL
 
-Website still works via remaining instances
+- Website still works via remaining instances
 
 🔄 End-to-End Traffic Flow
 User → ALB → Target Group → EC2 Instance → Nginx → Response
 
 📈 Outcomes
 
-Traffic evenly distributed
+* Traffic evenly distributed
 
-High availability achieved
+* High availability achieved
 
-Backend instances protected
+* Backend instances protected
 
-Production-style architecture implemented
+* Production-style architecture implemented
 
 🔐 Security Highlights
 
-EC2 not directly exposed
+> EC2 not directly exposed
 
-ALB acts as single entry point
+> ALB acts as single entry point
 
-Security groups restrict access
+> Security groups restrict access
 
-Health checks ensure reliability
+> Health checks ensure reliability
