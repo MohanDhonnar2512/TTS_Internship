@@ -1,4 +1,4 @@
-
+<img width="721" height="441" alt="image" src="https://github.com/user-attachments/assets/5d0de000-b33c-44c0-8607-9cfa8ef2ad2f" />
 # 📦 AWS AMI Sharing Between Accounts
 
 ## 📌 Project Overview
@@ -48,6 +48,8 @@ Target AWS Account
 │ Launch EC2
 ▼
 New EC2 Instance (Same Configuration)
+<img width="721" height="441" alt="image" src="https://github.com/user-attachments/assets/37c5b74b-aff4-4cae-86df-dbb19e533515" />
+
 
 
 ---
