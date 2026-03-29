@@ -54,7 +54,7 @@ It demonstrates hands-on experience in deploying, managing, and scaling cloud-ba
 
 ---
 
-### 🔹 Task 7: AWS Three-Tier Architecture Deployment (Main Project)
+### 🔹 Task 7: AWS Three-Tier Architecture Deployment 
 - Designed and deployed a three-tier architecture:
   - Presentation Layer (Web Servers)
   - Application Layer
@@ -65,7 +65,7 @@ It demonstrates hands-on experience in deploying, managing, and scaling cloud-ba
 ---
 
 ## 🚀 Project
- AWS Three-Tier Architecture Deployment (Main Project)
+ AWS Three-Tier Architecture Deployment 
 - Designed and deployed a three-tier architecture:
   - Presentation Layer (Web Servers)
   - Application Layer
