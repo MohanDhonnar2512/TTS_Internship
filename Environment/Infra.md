@@ -75,13 +75,13 @@ Security groups control inbound and outbound traffic.
 
   Port   Protocol   Purpose
   ------ ---------- ----------------------
-  22     SSH        Secure server access
+- 22     SSH        Secure server access
   
-  80     HTTP       Web traffic
+- 80     HTTP       Web traffic
   
-  443    HTTPS      Secure web traffic
+- 443    HTTPS      Secure web traffic
   
-  3389   RDP        Remote Desktop 
+- 3389   RDP        Remote Desktop 
 
 ### Security Practices
 
