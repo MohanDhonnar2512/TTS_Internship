@@ -202,23 +202,23 @@ Response formatting
 ### Configuration
 
 
-Engine: MySQL
+- Engine: MySQL
 
-Private Subnets
+- Private Subnets
 
-Public Access: Disabled
+- Public Access: Disabled
 
-Multi-AZ Enabled
+- Multi-AZ Enabled
 
 ### Benefits:
 
-Automatic backups
+- Automatic backups
 
-Failover
+- Failover
 
-Encryption
+- Encryption
 
-No OS management
+- No OS management
 
 🔗 MySQL Client Connectivity
 
@@ -231,9 +231,9 @@ mysql -h <RDS-ENDPOINT> -u admin -p
 
 Used for:
 
-Query execution
+- Query execution
 
-Connectivity validation
+- Connectivity validation
 
 ## Validation
 Web Tier
