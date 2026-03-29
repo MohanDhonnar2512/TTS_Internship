@@ -1,5 +1,5 @@
 
-# Live Cloud Infrastructure Management on AWS (Production Environment)
+# Live Cloud Infrastructure Management on AWS 
 
 ## Project Overview
 
